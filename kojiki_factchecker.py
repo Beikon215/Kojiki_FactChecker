@@ -8,6 +8,7 @@ def lf_cleaner(s):
                 ans += i
         return ans
 
+
 with open("kojiki.txt", encoding="UTF-8") as k:
     input_str = lf_cleaner(input("検証する文字列を入力"))
     kojiki = k.read()
@@ -21,4 +22,4 @@ with open("kojiki.txt", encoding="UTF-8") as k:
                 print("古事記にもそう書いてある。")
                 break
     else:
-        print("古事記にはそう書いていない。")   
+        print("古事記にはそう書いていない。")
