@@ -10,9 +10,8 @@ def lf_cleaner(s):
 
 
 with open("kojiki.txt", encoding="UTF-8") as k:
-    input_str = lf_cleaner(input("検証する文字列を入力"))
+    input_str = lf_cleaner(input("検証する文字列を入力:"))
     kojiki = k.read()
-    print(input_str)
     for i in range(len(kojiki)):
         if input_str[0] == kojiki[i]:
             for j in range(len(input_str)):
